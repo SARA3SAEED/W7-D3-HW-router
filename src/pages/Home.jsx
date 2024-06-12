@@ -5,8 +5,9 @@ import Pic1 from '../pages/Pic1';
 import Pic2 from '../pages/Pic2';
 import Pic3 from '../pages/Pic3';
 import Pic4 from '../pages/Pic4';
+import Pic5 from '../pages/Pic5';
 
-const images = {
+let images = {
   pic1: { 
     url: "https://images.pexels.com/photos/25039669/pexels-photo-25039669/free-photo-of-a-view-of-mountains-and-valleys-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     title: "Mountains and Valleys at Sunset"
@@ -22,7 +23,12 @@ const images = {
   pic4: { 
     url: "https://images.pexels.com/photos/13861099/pexels-photo-13861099.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
     title: "Scenic View of the Landscape"
-  },
+  }
+  ,
+  pic5: { 
+    url: "https://images.pexels.com/photos/25626514/pexels-photo-25626514/free-photo-of-root-node-problems.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    title: "Tree View with Sky"
+  }
 };
 
 export default function Home() {
@@ -37,6 +43,8 @@ export default function Home() {
         <Link to="/pic/pic2"><Pic2 /></Link>
         <Link to="/pic/pic3"><Pic3 /></Link>
         <Link to="/pic/pic4"><Pic4 /></Link>
+        <Link to="/pic/pic5"><Pic5 /></Link>
+
       </div>
     </div>
   );
