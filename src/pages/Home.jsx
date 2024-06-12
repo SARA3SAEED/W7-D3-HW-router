@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div>
       <Card imageUrl={selectedImage.url} title={selectedImage.title} />
-      <div className='flex'>
+      <div className='flex flex-wrap'>
         <Link to="/pic/pic1"><Pic1 /></Link>
         <Link to="/pic/pic2"><Pic2 /></Link>
         <Link to="/pic/pic3"><Pic3 /></Link>
